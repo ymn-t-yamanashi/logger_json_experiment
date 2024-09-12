@@ -2,6 +2,7 @@ defmodule LoggerJsonExperiment do
   @moduledoc """
   Documentation for `LoggerJsonExperiment`.
   """
+  require Logger
 
   @doc """
   Hello world.
@@ -13,6 +14,7 @@ defmodule LoggerJsonExperiment do
 
   """
   def hello do
+    Logger.error("hoge")
     :world
   end
 end
